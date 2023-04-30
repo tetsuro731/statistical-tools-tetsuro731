@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABテスト サンプルサイズ計算ツール</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>ABテスト サンプルサイズ計算ツール</h1>
+  <form id="form">
+    <label for="power">検出力:</label>
+    <input type="number" id="power" step="0.01" min="0" max="1">
+    <br>
+    <label for="significance">有意水準:</label>
+    <input type="number" id="significance" step="0.01" min="0" max="1">
+    <br>
+    <!-- その他の必要な入力欄を追加 -->
+    <button type="submit">計算する</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
